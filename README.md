@@ -1,2 +1,3 @@
 # Assessment-test
 c pgm
+Write a function in C that takes an array of integers and its size, and returns the second largest element. Constraints: ● Do not sort the array. ● Assume the array has at least two distinct elements.
