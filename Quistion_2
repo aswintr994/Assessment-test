@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+unsigned char modifyRegister(unsigned char reg)
+{
+    reg = reg | (1 << 2);      
+    reg = reg & ~(1 << 5);     
+    reg = reg ^ (1 << 0);      
+    return reg;
+}
+
+int main()
+{
+    unsigned char reg;
+
+    printf("Enter an 8-bit unsigned value (0-255): ");
+    scanf("%hhu", &reg);
+
+    unsigned char result = modifyRegister(reg);
+
+    printf("Modified Register Value (Decimal) = %hhu\n", result);
+    printf("Modified Register Value (Hex) = 0x%X\n", result);
+
+    return 0;
+}
